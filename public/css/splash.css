@@ -1,0 +1,110 @@
+:root {
+    --black: #1a1a1a;
+    --white: #f2f2f2;
+    --darkerWhite: #fdfdfd;
+    --red: #e82128;
+    --hoverGray: #cbcbcb;
+    --bold: 800;
+    --semibold: 700;
+    --medium: 600;
+    --thin: 500;
+}
+
+
+html,
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+
+}
+
+
+
+
+#greetings2 {
+    color: var(--white);
+    font-size: 25px;
+    font-weight: var(--medium);
+    margin-top: 8px;
+}
+
+
+
+#greetings-container {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+    flex-direction: column;
+    font-size: 28px;
+    color: var(--red);
+    font-weight: 700;
+
+}
+
+#prompt-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    flex-direction: row;
+    column-gap: 2%;
+}
+
+.link-btn {
+    width: 12%;
+    height: 40%;
+    font-weight: var(--medium);
+    font-size: 18px;
+    column-gap: 2%;
+    border-radius: 8px;
+    color: var(--black);
+    background-color: var(--white);
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-btn:hover {
+    box-shadow: 0 0 8px var(--hoverGray);
+}
+
+
+.splash-container {
+    position: relative;
+    padding: 3% 5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--black);
+}
+
+.splash-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/surround1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.05;
+    z-index: 0;
+}
+
+.splash-container > * {
+    position: relative;
+    z-index: 1;
+}

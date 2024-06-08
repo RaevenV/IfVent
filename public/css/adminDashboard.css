@@ -1,0 +1,23 @@
+:root {
+    --black: #1a1a1a;
+    --white: #f2f2f2;
+    --red: #e82128;
+    --hoverGray: #cbcbcb;
+    --bold: 800;
+    --semibold: 700;
+    --medium: 600;
+    --thin: 500;
+}
+
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--black);
+}
+
+.dashbg{
+    background-color: #1a1a1a;
+}
+

@@ -1,0 +1,51 @@
+:root {
+    --black: #1a1a1a;
+    --white: #f2f2f2;
+    --darkerWhite: #fdfdfd;
+    --red: #e82128;
+    --hoverGray: #cbcbcb;
+    --bold: 800;
+    --semibold: 700;
+    --medium: 600;
+    --thin: 500;
+}
+
+.error{
+    color: var(--red);
+    margin-top: 10px;
+}
+
+html,
+body {
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--black);
+}
+
+
+#addCategory-container {
+    padding: 2% 8%;
+    height: 100%;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-group input[type="file"] {
+    width: auto;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.mrg{
+    margin-top: 20px;
+}
+
+.form-wrapper{
+    width: 40%;
+}

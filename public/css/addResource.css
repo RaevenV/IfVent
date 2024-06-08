@@ -1,0 +1,146 @@
+:root {
+    --black: #1a1a1a;
+    --white: #f2f2f2;
+    --darkerWhite: #fdfdfd;
+    --red: #e82128;
+    --hoverGray: #cbcbcb;
+    --bold: 800;
+    --semibold: 700;
+    --medium: 600;
+    --thin: 500;
+}
+
+.error{
+    color: var(--red);
+    margin-top: 10px;
+}
+
+#header-container{
+    width: 100%;
+    margin-top: 30px;
+    height: 64px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#header-text{
+    font-weight: var(--bold);
+    color: var(--red);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+html,
+body {
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--black);
+}
+
+.back-container {
+    width: 100%;
+}
+
+#back-link {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: var(--semibold);
+    font-size: 20px;
+}
+
+#back-link:hover {
+    color: var(--red);
+}
+
+.form-container {
+    height: 500px;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 20%;
+}
+
+#addResource-container {
+    padding: 2% 8%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    margin-bottom: 10px;
+    font-weight: var(--semibold);
+    color: var(--white);
+}
+
+.form-group input[type="text"] {
+    width: 65%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group textarea{
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group select{
+    width: 30%;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.form-group input[type="file"] {
+    width: 30%;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+#submit-btn {
+    width: 16%;
+    height: 40px;
+    background-color: var(--red);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: var(--semibold);
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: box-shadow ease 0.3s;
+    margin-bottom: 60px;
+}
+
+#submit-btn:hover {
+    box-shadow: 0 0 4px var(--white);
+}
+
+
+.mrg{
+    margin-top: 20px;
+}
+
+
+#alert{
+    color: #4fff4d;
+}
