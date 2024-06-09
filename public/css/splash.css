@@ -73,7 +73,7 @@ body {
 }
 
 .link-btn:hover {
-    box-shadow: 0 0 8px var(--hoverGray);
+    box-shadow: 0 0 4px 0 var(--hoverGray);
 }
 
 
@@ -108,3 +108,5 @@ body {
     position: relative;
     z-index: 1;
 }
+
+

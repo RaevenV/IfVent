@@ -61,7 +61,7 @@
                                 <td>{{ $audioBook->title }}</td>
                                 <td class="createdAt">{{ $audioBook->created_at }}</td>
                                 <td class="link-table-box"><a class="link-table" href="{{ $audioBook->link }}" target="_blank">{{ $audioBook->link }}</a></td>
-                                <td class="th-view"><a href="{{ route('audioBook.view', ['id' => $audioBook->id]) }}" class="btn btn-primary">view</a></td>
+                                <td class="th-view"><a href="{{ route('audiobook.view', ['id' => $audioBook->id]) }}" class="btn btn-primary">view</a></td>
                             </tr>
                         @endforeach
                     </tbody>

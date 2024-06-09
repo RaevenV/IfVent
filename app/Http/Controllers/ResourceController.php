@@ -38,11 +38,11 @@ class ResourceController extends Controller
             ]);
         } elseif ($request->input('type') == 'ebook') {
             $request->validate([
-                'file' => 'required|file|mimes:pdf|max:51200',
+                'file' => 'required|file|mimes:pdf|max:204800',
             ]);
         }else if($request->input('type') == 'beyond'){
             $request->validate([
-                'file' => 'required|file|mimes:pdf|max:51200',
+                'file' => 'required|file|mimes:pdf|max:204800',
                 'video_link' => 'url',
             ]);
         }

@@ -48,6 +48,9 @@
                                     @endif
                                 </div>
 
+                                <div class="file-info">Recommended size : 370x220 (max:50mb)</div>
+
+
                                 <div class="flex items-center gap-4">
                                     <x-primary-button>{{ __('Save') }}</x-primary-button>
 

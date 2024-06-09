@@ -9,7 +9,7 @@ class Resource extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['user_id', 'resource_id', 'resource_type'];
+    protected $fillable = ['user_id', 'resource_id', 'resource_type', 'progress'];
 
     public function user()
     {

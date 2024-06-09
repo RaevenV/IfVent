@@ -17,6 +17,17 @@
         <div id="prompt-container">
             @if (Route::has('login'))
                 @auth
+                    <a
+                        @if(auth()->user()->usertype === 'admin')
+                            href="{{ url('/admin/dashboard') }}"
+                        @else
+                            href="{{ url('/dashboard') }}"
+                        @endif
+
+                        class="link-btn"
+                    >
+                        Dashboard
+                    </a>
                 @else
                     <a href="{{ route('login') }}" class="link-btn">Log in</a>
                     @if (Route::has('register'))

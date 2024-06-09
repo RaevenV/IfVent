@@ -21,3 +21,83 @@ body {
     background-color: #1a1a1a;
 }
 
+#adminDashboard-container{
+    width: 100%;
+    max-width: none !important;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 8%;
+}
+
+#adminDashboard-wrapper{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#adminDashboard-left-container{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#adminDashboard-right-container{
+    width: 72%;
+    height: 100%;
+    background-color:rgb(238, 238, 238);
+    border-radius: 8px;
+    padding: 2% 4%;
+}
+
+.left-container{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color:rgb(238, 238, 238);
+    padding: 3% 4%;
+}
+
+.trailblazer-title{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.left-container-title{
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.left-container-data{
+    margin-top: 10px;
+    font-family: "Inter", sans-serif;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: var(--hoverGray);
+    border-radius: 8px;
+}

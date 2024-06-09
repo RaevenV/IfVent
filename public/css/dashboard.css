@@ -25,9 +25,12 @@ body {
 #categories-check-container{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-top: 40px;
+    align-items: flex-start;
+    margin-top: 60px;
+    padding: 0 10%;
+    row-gap: 10px;
 }
 
 
@@ -35,6 +38,10 @@ body {
     color: var(--white);
     font-size: 24px;
     font-weight: 700;
+}
+
+#categories-check-desc{
+    color: var(--hoverGray);
 }
 
 
@@ -47,7 +54,6 @@ body {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding:  0 30px;
 }
 
 .category-container{
@@ -55,11 +61,11 @@ body {
     height: auto;
     display: flex;
     justify-content: space-between;
-    padding: 0 12%;
+    padding: 0 10%;
     flex-wrap: wrap;
     row-gap: 40px;
     margin-bottom: 80px;
-    margin-top: 40px;
+    margin-top: 60px;
 
 }
 
@@ -91,27 +97,30 @@ body {
     height: 45%;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     align-items: flex-start;
-    padding: 5% 8%;
-    padding-bottom: 7%;
+    padding: 3% 5%;
+    padding-bottom: 5%;
 }
 
 
 .category-name{
-    height: 20%;
+    height: 15%;
     width: 100%;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 800;
     font-family: "Montserrat", sans-serif;
     color: var(--black);
 }
 
 .category-description{
-    height: 40%;
+    height: 65%;
     width: 100%;
-    font-size: 14px;
+    font-size: 12px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
 }
 
 .category-btn{
@@ -120,6 +129,7 @@ body {
     font-weight: 700;
     font-size: 13px;
     align-self: flex-end;
+    height: 20%;
 }
 
 .category-btn:hover{

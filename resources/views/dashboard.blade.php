@@ -22,6 +22,9 @@
                 <div id="categories-check-wrapper">
                     Check out our resources!
                 </div>
+                <div id="categories-check-desc">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et deserunt quos vitae voluptatum magni earum accusamus officiis mollitia sunt tempore placeat rerum dolor vero quo amet ad, corporis saepe nobis!
+                </div>
             </div>
 
             <div class="category-container">
@@ -33,17 +36,15 @@
                                 {{$category->name}}
                             </div>
                             <div class="category-description">
-                                {{$category->description}}
+                                {{-- {{$category->description}} --}}
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis eveniet magni, incidunt eius, perspiciatis sed necessitatibus ea optio est inventore, itaque culpa voluptatem rerum? Nemo quod dolores non earum fugit.
                             </div>
-                            <a href="#" class="btn category-btn">explore</a>
+                            <a href="{{ route('categories.show', $category->id) }}" class="btn category-btn">explore</a>
                         </div>
                     </div>
                 @endforeach
             </div>
         </div>
-
-
-
 
     </div>
 

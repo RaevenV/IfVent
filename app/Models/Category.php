@@ -21,7 +21,6 @@ class Category extends Model
         return $this->hasMany(AudioBook::class);
     }
 
-
     public function beyondTheBooks()
     {
         return $this->hasMany(BeyondTheBook::class);

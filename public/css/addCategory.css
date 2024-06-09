@@ -49,3 +49,12 @@ body {
 .form-wrapper{
     width: 40%;
 }
+
+
+.file-info{
+    margin-top: 8px !important;
+    font-size: 12px;
+    font-weight: 500;
+    color: gray;
+}
+

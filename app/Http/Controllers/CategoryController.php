@@ -12,6 +12,15 @@ class CategoryController extends Controller
         return view('admin/addCategory');
     }
 
+    public function show(Category $category)
+    {
+        $ebooks = $category->ebooks;
+        $audioBooks = $category->audioBooks;
+        $beyondTheBooks = $category->beyondTheBooks;
+
+        return view('viewCategory', compact('category', 'ebooks', 'audioBooks', 'beyondTheBooks'));
+    }
+
     public function store(Request $request){
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
